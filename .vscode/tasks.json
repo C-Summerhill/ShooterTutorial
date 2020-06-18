@@ -1,0 +1,977 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ShooterTutorial Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win32",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Win64",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Shipping",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorial Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorial Android Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorial",
+				"Android",
+				"Test",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorialEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Debug",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorialEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"DebugGame",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterTutorialEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterTutorialEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterTutorialEditor",
+				"Win64",
+				"Development",
+				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal\\UE_4.25"
+			}
+		}
+	]
+}

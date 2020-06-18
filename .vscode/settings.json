@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/.git": true,
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/.vscode": true,
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/Content": true,
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/DerivedDataCache": true,
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/Intermediate": true,
+		"F:/Unreal/ShooterTutorial/ShooterTutorial/Saved": true
+	}
+}
