@@ -52,6 +52,9 @@ Plugins/*/Binaries/*
 # Builds
 Build/*
 
+# Removing Asset Pack - Game can't be built without these, there are part of the course
+Content/AssetPacks/*
+
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
 Build/*/**
