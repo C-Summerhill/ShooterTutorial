@@ -31,6 +31,22 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	float GetHealthAsPecentage() const;
+
+	UFUNCTION(BlueprintPure)
+	float GetWeaponSpreadMinimum() const;
+
+	UFUNCTION(BlueprintPure)
+	float GetWeaponSpreadMaximum() const;
+
+	UFUNCTION(BlueprintPure)
+	int GetClip() const;
+
+	UFUNCTION(BlueprintPure)
+	int GetRemainingAmmo() const;
+
+	UFUNCTION(BlueprintPure)
+	float GetClipAsPrecentage() const;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -41,7 +57,8 @@ public:
 	
 	void Shoot();
 
-	
+	void Reload();
+
 private:
 
 	void MoveForward(float AxisValue);
@@ -56,12 +73,12 @@ private:
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<AGun> GunClass;
 
-	UPROPERTY()
-	AGun* Gun;
-
 	UPROPERTY(EditDefaultsOnly)
 	float MaxHealth;
 
 	UPROPERTY(VisibleAnywhere)
 	float Health;
+
+	UPROPERTY(VisibleAnywhere)
+	AGun* Gun;
 };

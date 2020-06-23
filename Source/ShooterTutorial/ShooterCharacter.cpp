@@ -73,6 +73,7 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAxis(TEXT("LookRightRate"), this, &AShooterCharacter::LookRightRate);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shooting"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Shoot);
+	PlayerInputComponent->BindAction(TEXT("Reload"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Reload);
 
 }
 
@@ -91,7 +92,7 @@ void AShooterCharacter::LookUpRate(float AxisValue)
 	AddControllerPitchInput(AxisValue * RotationRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AShooterCharacter::LookRightRate(float AxisValue) 
+void AShooterCharacter::LookRightRate(float AxisValue)
 {
 	AddControllerYawInput(AxisValue * RotationRate * GetWorld()->GetDeltaSeconds());
 	
@@ -102,6 +103,11 @@ void AShooterCharacter::Shoot()
 	Gun->PullTrigger();
 }
 
+void AShooterCharacter::Reload() 
+{
+	Gun->Reload();
+}
+
 int AShooterCharacter::GetHealth() const
 {
 	return Health;
@@ -110,6 +116,31 @@ int AShooterCharacter::GetHealth() const
 float AShooterCharacter::GetHealthAsPecentage() const
 {
 	return Health / MaxHealth;
+}
+
+float AShooterCharacter::GetWeaponSpreadMinimum() const
+{
+	return Gun->GetWeaponSpreadMinimum();
+}
+
+float AShooterCharacter::GetWeaponSpreadMaximum() const
+{
+	return Gun->GetWeaponSpreadMinimum();
+}
+
+int AShooterCharacter::GetClip() const
+{
+	return Gun->GetClip();
+}
+
+int AShooterCharacter::GetRemainingAmmo() const
+{
+	return Gun->GetRemainingAmmo();
+}
+
+float AShooterCharacter::GetClipAsPrecentage() const
+{
+	return Gun->GetClipAsPrecentage();
 }
 
 // void AShooterCharacter::LookUp(float AxisValue) 

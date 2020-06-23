@@ -5,7 +5,7 @@
 			"name": "ShooterTutorial (Debug)",
 			"request": "launch",
 			"preLaunchTask": "ShooterTutorial Win64 Debug Build",
-			"program": "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"program": "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Debug.exe",
 			"args": [
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
@@ -18,7 +18,7 @@
 			"name": "ShooterTutorial (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "ShooterTutorial Win64 DebugGame Build",
-			"program": "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"program": "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
 			"args": [
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
@@ -31,7 +31,7 @@
 			"name": "ShooterTutorial (Development)",
 			"request": "launch",
 			"preLaunchTask": "ShooterTutorial Win64 Development Build",
-			"program": "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Binaries\\Win64\\UE4.exe",
+			"program": "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Binaries\\Win64\\UE4.exe",
 			"args": [
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
@@ -44,7 +44,7 @@
 			"name": "ShooterTutorial (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "ShooterTutorial Win64 Shipping Build",
-			"program": "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"program": "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
 			"args": [
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
@@ -57,7 +57,7 @@
 			"name": "ShooterTutorial (Test)",
 			"request": "launch",
 			"preLaunchTask": "ShooterTutorial Win64 Test Build",
-			"program": "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"program": "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Binaries\\Win64\\UE4-Win64-Test.exe",
 			"args": [
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
@@ -72,7 +72,7 @@
 			"preLaunchTask": "ShooterTutorialEditor Win64 Debug Build",
 			"program": "F:\\Unreal\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
 			"args": [
-				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject"
+				"F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\ShooterTutorial.uproject"
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
 			"stopAtEntry": false,
@@ -86,7 +86,7 @@
 			"preLaunchTask": "ShooterTutorialEditor Win64 DebugGame Build",
 			"program": "F:\\Unreal\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
 			"args": [
-				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject"
+				"F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\ShooterTutorial.uproject"
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
 			"stopAtEntry": false,
@@ -100,7 +100,7 @@
 			"preLaunchTask": "ShooterTutorialEditor Win64 Development Build",
 			"program": "F:\\Unreal\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject"
+				"F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\ShooterTutorial.uproject"
 			],
 			"cwd": "F:\\Unreal\\UE_4.25",
 			"stopAtEntry": false,
@@ -117,7 +117,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\ShooterTutorial.uproject\"",
+				"-project=\"F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\ShooterTutorial.uproject\"",
 				"-game",
 				"-engine"
 			],

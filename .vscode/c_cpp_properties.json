@@ -202,8 +202,8 @@
                 "F:\\Unreal\\UE_4.25\\Engine\\Source\\Runtime\\Experimental\\GeometryCollectionSimulationCore\\Public",
                 "F:\\Unreal\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\ClothingSystemRuntimeInterface",
                 "F:\\Unreal\\UE_4.25\\Engine\\Source\\Runtime\\ClothingSystemRuntimeInterface\\Public",
-                "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\ShooterTutorial",
-                "F:\\Unreal\\ShooterTutorial\\ShooterTutorial\\Source",
+                "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\ShooterTutorial",
+                "F:\\Unreal\\NewShooterFolder\\ShooterTutorial\\Source",
                 "F:\\Unreal\\UE_4.25\\Engine\\Source\\ThirdParty\\PhysX3\\PxShared\\include",
                 "F:\\Unreal\\UE_4.25\\Engine\\Source\\ThirdParty\\PhysX3\\PxShared\\include\\cudamanager",
                 "F:\\Unreal\\UE_4.25\\Engine\\Source\\ThirdParty\\PhysX3\\PxShared\\include\\filebuf",
@@ -539,8 +539,7 @@
                 "UE_PROJECT_NAME=ShooterTutorial",
                 "SHOOTERTUTORIAL_VTABLE=DLLEXPORT_VTABLE",
                 "SHOOTERTUTORIAL_API="
-            ],
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
+            ],            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
             "cStandard": "c11",
             "cppStandard": "c++17"
         }

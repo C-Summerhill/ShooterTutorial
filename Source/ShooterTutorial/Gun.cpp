@@ -23,6 +23,14 @@ AGun::AGun()
 
 void AGun::PullTrigger() 
 {
+	if(Clip <= 0)
+	{
+		UGameplayStatics::SpawnSoundAttached(DryFire, Mesh, TEXT("MuzzleFlashSocket"));
+		return;
+	}
+
+	Clip--;
+	
 	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
 	UGameplayStatics::SpawnSoundAttached(MuzzleSound, Mesh, TEXT("MuzzleFlashSocket"));
 
@@ -43,11 +51,59 @@ void AGun::PullTrigger()
 	}
 }
 
+void AGun::Reload() 
+{
+	if(RemainingAmmo < 1 || Clip == MaxClip)
+		{ return; }
+	
+	RemainingAmmo += Clip;
+	Clip = 0;
+
+	if(RemainingAmmo > MaxClip)
+	{
+		Clip = MaxClip;
+		RemainingAmmo -= MaxClip;
+		return;
+	}
+
+	Clip = RemainingAmmo;
+	RemainingAmmo = 0;
+	
+}
+
+float AGun::GetWeaponSpreadMinimum() const
+{
+	return WeaponSpreadMinimum;
+}
+
+float AGun::GetWeaponSpreadMaximum() const
+{
+	return WeaponSpreadMaximum;
+}
+
+int AGun::GetClip() const
+{
+	return Clip;
+}
+
+int AGun::GetRemainingAmmo() const
+{
+	return RemainingAmmo;
+}
+
+float AGun::GetClipAsPrecentage() const
+{
+	return (float) Clip / MaxClip;
+}
+
 // Called when the game starts or when spawned
 void AGun::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	//This always start the gun with maximum ammo
+	Clip = StartingClipAmmo > 0 ? StartingClipAmmo : MaxClip;
+	RemainingAmmo = StartingRemainingAmmo > 0 ? StartingRemainingAmmo : MaxRemainingAmmo;
 }
 
 // Called every frame

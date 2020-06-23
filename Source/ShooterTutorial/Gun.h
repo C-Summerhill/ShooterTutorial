@@ -17,6 +17,18 @@ public:
 
 	void PullTrigger();
 
+	void Reload();
+
+	float GetWeaponSpreadMinimum() const;
+
+	float GetWeaponSpreadMaximum() const;
+
+	int GetClip() const;
+
+	int GetRemainingAmmo() const;
+
+	float GetClipAsPrecentage() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -44,6 +56,43 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Damage = 10;
 
+	UPROPERTY(EditDefaultsOnly)
+	float WeaponSpreadMinimum = 1;
+
+	UPROPERTY(EditDefaultsOnly)
+	float WeaponSpreadMaximum = 3;
+
+// Ammo Code
+
+	UPROPERTY(EditAnywhere)
+	int MaxClip = 20;
+
+	UPROPERTY(EditAnywhere)
+	int Clip;
+
+	UPROPERTY(EditAnywhere)
+	int MaxRemainingAmmo = 80;
+
+	UPROPERTY(EditAnywhere)
+	int RemainingAmmo;
+
+	//How long it takes to reload
+	UPROPERTY(EditAnywhere)
+	float ReloadDelay = 1;
+
+	//Leave at 0 to set to max ammo
+	UPROPERTY(EditDefaultsOnly)
+	int StartingRemainingAmmo = 0;
+
+	//Leave at 0 to set to max ammo
+	UPROPERTY(EditDefaultsOnly)
+	int StartingClipAmmo = 0;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* ReloadSound;
+
+//~ Ammo Code
+
 	bool GunTrace(FHitResult& Hit, FVector& ShotDirection);
 
 	AController* GetOwnerController() const;
@@ -53,4 +102,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	USoundBase* HitSound;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* DryFire;
 };
