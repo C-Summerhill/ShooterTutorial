@@ -5,6 +5,7 @@
 #include "Kismet\GameplayStatics.h"
 #include "AIController.h"
 #include "ShooterCharacter.h"
+#include "ShooterAIController.h"
 #include "BehaviorTree\BlackboardComponent.h"
 
 
@@ -18,15 +19,16 @@ void UBTService_PlayerLocationIfSeen::TickNode(UBehaviorTreeComponent& OwnerComp
     Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
     APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-    AAIController* Character = (OwnerComp.GetAIOwner());
+    AShooterAIController* Character = Cast<AShooterAIController>(OwnerComp.GetAIOwner());
 
     //if either pointers are false, return to prevent crashing
     if(PlayerPawn == nullptr || Character == nullptr)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Character Not Found!"))
         return;
     }
 
-    if(Character->LineOfSightTo(PlayerPawn))
+    if(Character->CanSeePlayer())
     {
         OwnerComp.GetBlackboardComponent()->SetValueAsObject(GetSelectedBlackboardKey(), PlayerPawn);
     }
